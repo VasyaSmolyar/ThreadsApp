@@ -28,7 +28,10 @@ namespace ThreadsApp
         }
         public void Sort()
         {
+            DateTime start = DateTime.Now;
             _sort();
+            DateTime end = DateTime.Now;
+            Time = Convert.ToInt32((end - start).TotalMilliseconds);
         }
         public ShellSort(int[] data)
         {

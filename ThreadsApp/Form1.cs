@@ -39,6 +39,9 @@ namespace ThreadsApp
             textBox2.Text = ArrayToString(numsA);
             textBox3.Text = ArrayToString(numsB);
             textBox4.Text = ArrayToString(numsC);
+            label2.Text = "";
+            label3.Text = "";
+            label4.Text = "";
             button2.Enabled = true;
         }
 
@@ -73,6 +76,10 @@ namespace ThreadsApp
             textBox2.Text = ArrayToString(sort1.Nums);
             textBox3.Text = ArrayToString(sort2.Nums);
             textBox4.Text = ArrayToString(sort3.Nums);
+
+            label2.Text = sort1.Time.ToString() + " ms";
+            label3.Text = sort2.Time.ToString() + " ms";
+            label4.Text = sort3.Time.ToString() + " ms";
         }
     }
 }
